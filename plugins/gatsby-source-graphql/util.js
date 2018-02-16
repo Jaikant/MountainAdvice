@@ -50,9 +50,6 @@ const assembleQueries = exports.assembleQueries = (0, _ramda.compose)(surroundWi
 
 const createNodes = (createNode, reporter) => (value, key) => {
   (0, _ramda.forEach)(queryResultNode => {
-    console.log("The queryResult is :", queryResultNode);
-    console.log("value is :", value);
-    console.log("key is :", key);
     const _id = queryResultNode._id,
           fields = (0, _objectWithoutProperties3.default)(queryResultNode, ['_id']);
 

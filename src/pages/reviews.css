@@ -7,7 +7,6 @@ figure.snip1204 {
   min-width: 220px;
   max-width: 310px;
   width: 100%;
-  min-height: 600px;
   color: #333;
   text-align: left;
   box-shadow: none !important;
@@ -34,6 +33,7 @@ figure.snip1204 blockquote {
   position: relative;
   background-color: #fafafa;
   padding: 30px 50px 65px 50px;
+  min-height: 300px;
   font-size: 0.8em;
   font-weight: 500;
   margin: 0 0 -40px;

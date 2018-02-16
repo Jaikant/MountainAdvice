@@ -7,7 +7,7 @@ const ReviewBox = (props) => {
    const { comment, destination, month, year, rating, usr } = props;
    return (
      <div css={{
-            padding: `16px`,
+            margin: `32px`,
           }}
      >
      <figure className="snip1204">

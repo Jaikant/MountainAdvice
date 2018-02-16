@@ -74,7 +74,7 @@ module.exports = {
     {
       resolve: `gatsby-source-graphql`,
       options: {
-        endpoint: `http://localhost:3001/graphql`,
+        endpoint: `https://sherpafeet.com/graphql`,
         query: `{
           ratings (guideuid: "RajeshThakur") {
             _id
