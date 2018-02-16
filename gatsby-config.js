@@ -49,10 +49,66 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Mountain Advice",
+        short_name: "Mountain",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#6bd4c8",
+        display: "minimal-ui",
+        icons: [
+          {
+            // Everything in /static will be copied to an equivalent
+            // directory in /public during development and build, so
+            // assuming your favicons are in /static/favicons,
+            // you can reference them here
+            src: `/favicons/android-icon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        endpoint: `http://localhost:3001/graphql`,
+        query: `{
+          ratings (guideuid: "RajeshThakur") {
+            _id
+            comment
+            destination
+            month
+            year
+            rating
+            attractions {
+              snow
+              rivercrossings
+              meadows
+              wildlife
+              villagestay
+              localfestival
+              forests
+              camping
+              waterbody
+              rivercrossings
+            }
+            raterid
+            date
+            usr {
+              picture
+              firstname
+              lastname
+            }
+          }
+        }`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
     'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-netlify-cms'
+    'gatsby-transformer-sharp'
   ],
 }

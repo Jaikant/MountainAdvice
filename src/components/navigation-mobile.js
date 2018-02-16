@@ -47,7 +47,7 @@ export default () => (
     <MobileNavItem linkTo="/trek/" label="Treks" icon={TrekIcon} />
     <MobileNavItem linkTo="/expedition/" label="Expeditions" icon={ExpeditionIcon} />
     <MobileNavItem
-      linkTo="/community/"
+      linkTo="/reviews/"
       label="Reviews"
       icon={ReviewsIcon}
     />
