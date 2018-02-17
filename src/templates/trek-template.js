@@ -41,44 +41,48 @@ const Template = ({ data, pathContext }) => {
   const { markdownRemark: post } = data;
   const { next, prev, slug } = pathContext;
   const { frontmatter } = post;
-  let keywords = '';
- /*
-  const tagurl = `https://www.tech47.in${slug}`;
-  const tagimage =
-    frontmatter.image != null
-      ? `https://www.tech47.in${frontmatter.image.childImageSharp.resize.src}`
-      : null;
- */
-  const tagurl = '';
-  const tagimage = '';
+  let keywords = 'treks, expeditions, garhwal, uttarakhand, himalayas';
   return (
     <div>
       <div className={blogTheme}>
         <Box css="margin: auto 16px auto 16px;">
           <Helmet>
-            <title> {`Tech47 - ${frontmatter.title}`} </title>
-            <meta name="description" content={frontmatter.seodescription} />
+            <title> {frontmatter.title} </title>
+            <meta name="description" content={post.excerpt} />
             <meta name="Keywords" content={keywords} />
             <meta property="og:title" content={frontmatter.title} />
             <meta
               property="og:description"
-              content={frontmatter.seodescription}
+              content={post.excerpt}
             />
-            <meta property="og:url" content={tagurl} />
-            <meta property="og:image" content={tagimage} />
-            <meta
-              property="og:site_name"
-              content="We build technology for social good"
-            />
-            <meta property="og:type" content="article" />
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={post.frontmatter.title} />
-            <meta name="twitter:url" content={tagurl} />
             <meta
               name="twitter:description"
-              content={frontmatter.seodescription}
+              content={post.excerpt}
             />
-            <meta name="twitter:image" content={tagimage} />
+            {data.imageSharp.resize.src && (
+              <meta
+                name="og:image"
+                content={`https://mountainadvice.com${
+                  data.imageSharp.resize.src
+                }`}
+              />
+            )}
+            {data.imageSharp.resize.src && (
+              <meta
+                name="twitter:image"
+                content={`https://mountainadvice.com${
+                  data.imageSharp.resize.src
+                }`}
+              />
+            )}
+            <meta name="og:type" content="article" />
+            <meta name="twitter:label1" content="Reading time" />
+            <meta
+              name="twitter:data1"
+              content={`${post.timeToRead} min read`}
+            />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={post.frontmatter.title} />
           </Helmet>
           <h1>{post.frontmatter.title}</h1>
           {post.frontmatter.author ? (
@@ -118,6 +122,7 @@ export const blogPostQuery = graphql`
   query TrekByPath($slug: String!, $imageregex: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
       timeToRead
       tableOfContents
       frontmatter {
@@ -128,6 +133,9 @@ export const blogPostQuery = graphql`
       id
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
+      }
+      resize(width: 1500, height: 1500) {
+        src
       }
     }
   }

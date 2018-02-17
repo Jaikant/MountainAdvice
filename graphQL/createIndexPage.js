@@ -1,7 +1,7 @@
 const path = require('path');
 const slash = require('slash');
 
-const createTrekIndexPage = (createPage, graphql) => {
+const createIndexPage = (createPage, graphql, pageType, pagePath) => {
   return new Promise((resolve, reject) => {
 
     const trekIndexTemplate = path.resolve(
@@ -9,9 +9,9 @@ const createTrekIndexPage = (createPage, graphql) => {
     );
     resolve(
       graphql(
-        `
+        ` query IndexPages($indexPage : String!) 
           {
-            allMarkdownRemark(filter: {fields: {slug: { regex: "/trek/" }}}) {
+            allMarkdownRemark(filter: {fields: {slug: { regex: $indexPage }}}) {
               edges {
                 node {
                   id
@@ -29,7 +29,8 @@ const createTrekIndexPage = (createPage, graphql) => {
               }
             }
           }
-        `
+        `,
+        { indexPage: pageType }
       ).then(result => {
         if (result.error) {
           return Promise.reject(result.errors)
@@ -39,7 +40,7 @@ const createTrekIndexPage = (createPage, graphql) => {
           const posts = result.data.allMarkdownRemark.edges;
 
             createPage({
-              path: `\\trek`,
+              path: pagePath,
               component: slash(trekIndexTemplate),
               context: {
                 data: result.data
@@ -51,4 +52,4 @@ const createTrekIndexPage = (createPage, graphql) => {
   });
 }
 
-module.exports = createTrekIndexPage;
+module.exports = createIndexPage;

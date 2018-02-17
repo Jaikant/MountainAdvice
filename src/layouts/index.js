@@ -18,6 +18,12 @@ export default class Template extends React.Component {
 
     return (
       <div>
+        <Helmet defaultTitle={`Mountain Advice`} titleTemplate={`%s | Mountain Advice`}>
+          <meta name="twitter:site" content="@RajeshT59035636" />
+          <meta name="og:type" content="website" />
+          <meta name="og:site_name" content="Mountain Advice" />
+          <html lang="en" />
+        </Helmet>
         <Navigation pathname={this.props.location.pathname} />
         <div css={{
             paddingTop: 0,
