@@ -12,18 +12,20 @@ const IndexPage = (props) => {
     ? <h3> Contact us to check your eligibility to join our expeditions </h3> 
     : <h3> We would love to host you on one of our himalayan treks </h3>;
   return (
-    <div style={{
+   <div>
+     <div css={`
+            margin: 32px;
+            text-align: center;
+          `}
+     >
+       {Heading}
+     </div>
+     <div style={{
            display: 'flex',
            flexWrap: 'wrap',
            justifyContent: 'center'
          }}
-    >
-      <div css={`
-            margin: 32px;
-           `}
-      >
-        {Heading}
-      </div>
+     >
       {
         apiData.allMarkdownRemark.edges.map((post, index) => {
           const { node } = post
@@ -32,6 +34,7 @@ const IndexPage = (props) => {
           )
         })
       }
+      </div>
     </div>
   )
 }
