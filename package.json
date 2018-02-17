@@ -52,6 +52,9 @@
     "selenium-server-standalone-jar": "^3.6.0",
     "selenium-webdriver": "^3.6.0"
   },
+  "resolutions": {
+    "gatsby-plugin-netlify-cms/netlify-cms": "1.1.0"
+  },
   "keywords": [
     "gatsby"
   ],
