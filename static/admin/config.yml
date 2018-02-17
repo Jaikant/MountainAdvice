@@ -8,7 +8,7 @@ public_folder: /img
 collections:
   - name: "trek"
     label: "Trek"
-    folder: "content/trek/"
+    folder: "content/trek"
     create: true
     slug: "{{slug}}"
     fields:
@@ -21,7 +21,7 @@ collections:
 
   - name: "expedition"
     label: "Expedition"
-    folder: "content/expedition/"
+    folder: "content/expedition"
     create: true
     slug: "{{slug}}"
     fields:
