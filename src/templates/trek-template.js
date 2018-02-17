@@ -51,7 +51,6 @@ const Template = ({ data, pathContext }) => {
  */
   const tagurl = '';
   const tagimage = '';
-
   return (
     <div>
       <div className={blogTheme}>

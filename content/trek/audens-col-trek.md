@@ -1,9 +1,8 @@
 ---
-title: "Audens Col Expedition"
-imgdesc: "A picture of Audens Col"
-imagepath: /img/audens.jpg
+title: "Audens Col Trek"
+imgdesc: "A picture of Audens Col Trek"
+imagepath: /img/dodital.jpg
 ---
-
 
 Audens Col Pass height (5490)mtr. Trek type:- challenging difficult. About Audens Col Pass: Audens col pass is Gangotri region it is very famous pass in Gangorti region. Audens Col Pass is one of Very Technical pass in Garhwal Himalayas. 
 Itanari of Audens Col Pass

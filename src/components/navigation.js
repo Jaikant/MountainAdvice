@@ -85,21 +85,41 @@ export default ({ pathname }) => {
 
   const navPosition = isHomepage || isBlog 
     ? { 
+        display: `inherit`,
         position: `absolute`
       }
     : { 
+        display: `inherit`,
         position: `fixed`
       };
   const navPositionClass = css(navPosition);
+
+  const navDisplay = isHomepage
+    ? { 
+        display: `none`
+      }
+    : { 
+        display: `inherit`
+      };
+  const navDisplayClass = css(navDisplay);
+
+  const navColor = isHomepage
+    ? {
+        color: `white`
+      }
+    : {
+        color: `inherit`
+      };
+  const navColorClass = css(navColor);
 
 
   return (
     <div
       role="navigation"
       css={`
+        ${navDisplayClass};
         border-bottom: 1px solid ${colors.ui.light};
         background-color: rgba(255,255,255,0.975);
-        position: isHomepage ? absolute : false;
         height: ${presets.headerHeight};
         z-index: 2;
         left: 0;
@@ -158,7 +178,7 @@ export default ({ pathname }) => {
               padding: 16px;
               justify-content: flex-end;
               list-style: none;
-              color: {${isHomepage} ? ${colors.mountain2} : ${colors.mountain5}};
+              ${navColorClass};
               flex-grow: 1;
               overflow-x: auto;
               mask-image: linear-gradient(to right, transparent, white 1%, white 98%, transparent);

@@ -11,7 +11,7 @@ const createTrekPages = (createPage, graphql) => {
       graphql(
         `
           {
-            allMarkdownRemark(filter: {fields: {slug: {regex: "/trek/" }}}) {
+            allMarkdownRemark(filter: {fields: {slug: {regex: "/trek|expedition/" }}}) {
               edges {
                 node {
                   id
