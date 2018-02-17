@@ -1,34 +1,36 @@
 import React from "react"
 import Link from "gatsby-link"
+import { css } from 'react-emotion';
 import logo from "../mountain.svg"
 import presets, { colors } from "../utils/presets"
+import media from '../utils/media';
 import { vP, vPHd, vPVHd, vPVVHd } from "./gutters"
 
-const navItemStyles = {
-  boxSizing: `border-box`,
-  display: `inline-block`,
-  color: `inherit`,
-  textDecoration: `none`,
-  textTransform: `uppercase`,
-  borderBottom: `none`,
-  letterSpacing: `0.03em`,
-  lineHeight: `calc(${presets.headerHeight} - 6px)`,
-  padding: `6px 4px 0`,
-  position: `relative`,
-  top: 0,
-  transition: `color .15s ease-out`,
-  "&:hover": {
-    opacity: 0.8,
-  },
-}
+const navItemStyles = css`
+  box-sizing: border-box;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: none;
+  letter-spacing: 0.03em;
+  line-height: calc(${presets.headerHeight} - 6px);
+  padding: 6px 4px 0;
+  position: relative;
+  top: 0;
+  transition: color .15s ease-out;
+  &:hover: {
+    opacity: 0.8;
+  };
+`;
 const NavItem = ({ linkTo, children }) => (
   <li
-    css={{
-      display: `inline-block`,
-      margin: 0,
-    }}
+    css={`
+      display: inline-block;
+      margin: 0;
+    `}
   >
-    <Link to={linkTo} css={navItemStyles}>
+    <Link to={linkTo} className={navItemStyles}>
       {children}
     </Link>
   </li>
@@ -52,8 +54,9 @@ export default ({ pathname }) => {
       backgroundColor: colors.ui.whisper,
     }
   }
+  const stylesClass = css(styles);
   const gutters = isHomepage
-    ? {
+    ? { 
         paddingLeft: `32px`,
         paddingRight: `32px`,
         paddingTop: `32px`,
@@ -70,75 +73,97 @@ export default ({ pathname }) => {
           paddingRight: `64px`,
         },
       }
-    : {}
+    : {};
+
+  const displayLogo = isHomepage
+    ? {
+        display: `none`
+      }
+    : {};
+
+  const logoClass = css(displayLogo);
+
+  const navPosition = isHomepage || isBlog 
+    ? { 
+        position: `absolute`
+      }
+    : { 
+        position: `fixed`
+      };
+  const navPositionClass = css(navPosition);
+
 
   return (
     <div
       role="navigation"
-      css={{
-        borderBottom: `1px solid ${colors.ui.light}`,
-        backgroundColor: `rgba(255,255,255,0.975)`,
-        position: isHomepage ? `absolute` : false,
-        height: presets.headerHeight,
-        zIndex: `2`,
-        left: 0,
-        right: 0,
-        [presets.Tablet]: {
-          position: isHomepage || isBlog ? `absolute` : `fixed`,
-        },
-        ...styles,
-      }}
+      css={`
+        border-bottom: 1px solid ${colors.ui.light};
+        background-color: rgba(255,255,255,0.975);
+        position: isHomepage ? absolute : false;
+        height: ${presets.headerHeight};
+        z-index: 2;
+        left: 0;
+        right: 0;
+        ${media.tablet` 
+           ${navPositionClass};
+        `};
+        ${stylesClass};
+      `}
     >
       <div
-        css={{
-          margin: `0 auto`,
-          paddingLeft: `32px`,
-          paddingRight: `64px`,
-          ...gutters,
-          display: `flex`,
-          alignItems: `center`,
-          width: `100%`,
-          height: `100%`,
-        }}
+        css={`
+          margin: 0 auto;
+          padding-left: 32px;
+          padding-right: 64px;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        `}
       >
         <Link
           to="/"
-          css={{
-            alignItems: `center`,
-            color: `inherit`,
-            display: `flex`,
-            textDecoration: `none`,
-            marginRight: `32px`,
-            borderBottom: `none`,
-            display: isHomepage ? `none` : `flex`,
-            }}
+          css={`
+            align-items: center;
+            color: inherit;
+            display: flex;
+            text-decoration: none;
+            margin-right: 32px;
+            border-bottom: none;
+            ${logoClass};
+            `}
         >
           <img
             src={logo}
-            css={{
-              height: 28,
-              width: `auto`,
-              margin: 0,
-            }}
+            css={`
+              height: 2.5rem;
+              margin: 0;
+            `}
             alt=""
           />
-          <h3 css={{ margin : `auto`, paddingLeft: `16px`}}> Mountain Advice </h3>
+          <h3 css={`
+                margin : auto;
+                padding-left: 16px;
+              `}
+          > 
+            Mountain Advice 
+          </h3>
         </Link>
         <ul
-          css={{
-            display: `none`,
-            [presets.Tablet]: {
-              display: `flex`,
-              margin: 0,
-              padding: `16px`,
-              justifyContent: `flex-end`,
-              listStyl: `none`,
-              color: isHomepage ? colors.mountain2 : colors.mountain5,
-              flexGrow: 1,
-              overflowX: `auto`,
-              maskImage: `linear-gradient(to right, transparent, white 1%, white 98%, transparent)`,
-            },
-          }}
+          css={`
+            display: none;
+            ${media.tablet`
+              display: flex;
+              margin: 0;
+              padding: 16px;
+              justify-content: flex-end;
+              list-style: none;
+              color: {${isHomepage} ? ${colors.mountain2} : ${colors.mountain5}};
+              flex-grow: 1;
+              overflow-x: auto;
+              mask-image: linear-gradient(to right, transparent, white 1%, white 98%, transparent);
+              `};
+          `}
         >
           <NavItem linkTo="/trek/">Treks</NavItem>
           <NavItem linkTo="/expedition/">Expeditions</NavItem>
