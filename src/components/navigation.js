@@ -4,7 +4,6 @@ import { css } from 'react-emotion';
 import logo from "../mountain.svg"
 import presets, { colors } from "../utils/presets"
 import media from '../utils/media';
-import { vP, vPHd, vPVHd, vPVVHd } from "./gutters"
 
 const navItemStyles = css`
   box-sizing: border-box;
