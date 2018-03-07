@@ -1,32 +1,54 @@
 ---
 title: "Stok Kangri Expedition"
 imgdesc: "A picture of Stok Kangri Expedition"
-imagepath: /img/audens.jpg
+imagepath: /img/stok.jpg
+piccredit: pavel_godiaev
+piclink: https://www.instagram.com/pavel_godiaev/
 ---
 
-Stok Kangri Trekking is very popular trekking expedition in Ladhakh region J&K. this peak is very beautiful peak and this peak climb every year lot of person not only Indian but other country also from stok Kangari peak we can see. Gulf Kangari, Nun, Kun Twin peak from the top of the peak we can see lot of mountains and much valleys.
+The Stok Kangri Trek is a very popular trekking expedition in the Ladakh region of J&K. This peak is very beautiful and many people from India and abroad climb it every year. From the Stok kangri peak we can see, the Gulf Kangri, Nun Kun twin peaks and a vast number of mountains and valleys.
 
-Itanari of stoke kangri
-Day:-1- flight from New Delhi to Leh(3524mtr) 
-Day:- 2- sightseeing at nearest Leh. Santistuba etc. 
-Day:-3- Drive from Leh to Stoke Village approx 2hr and trek to Manokarma at height of (4429mtr) Accommodation tent, sleeping bag. 
-Day:-4- trek start after breakfast to stoke base camp(4880)mtr. 5-6km 3-4 hr. will be take to walk established camp. 
-Day:-5- rest day at base camp visit and acclimatization . 
-Day:-6- rest day and practice of snow shoes and crempone and rope up. Midnight attempt to Stoke Kangri peak. 
-Day:- 7- rest day at base camp. 
-Day:-8- Trek to Stok Village approx 6 hr and then Drive almost 2hr to Leh stay at Hotel. 
-Day:-9-Trek Departure flight to Delhi. 
-Inclusion:-
-meals, sleeping bag, Hourse, tent, guide. First aid, peak booking and all permission, travel Leh to Leh. Hotel at Leh. Mountain equipment etc.
+## Itinerary for Stok Kangri
+#### Day 1
+Flight from New Delhi to Leh(3524mtr)
+#### Day 2
+Sightseeing at Leh. Shanti stupa etc.
+#### Day 3
+Drive from Leh to Stok Village approx 2hr and trek to Manokarma at height of 4429 mtrs.
+Accommodation in tents with sleeping bag.
+#### Day 4
+Trek starts after breakfast to stok base camp @ 4880 mtrs. 5-6 kms. 3-4 hr.
+#### Day 5
+Rest day at base camp and acclimatization .
+#### Day 6
+Rest day and practice of snow shoes, crampons and rope up. Midnight attempt to Stok Kangri peak.
+#### Day 7
+Rest day at base camp.
+#### Day 8
+Trek to Stok Village. Approx 6 hrs of trek. Then drive to Leh, approx 2hr. At Leh, stay in a hotel.
+#### Day 9
+Trek Departure flight to Delhi.
 
-Exclusion:-
-personal garments, head tourch, water bottle, trekking shoos, poter, and staff tips. Flight ticket dehli to delhi.
+We can do all needed travel arrangements, though mostly trekkers prefer to arrange a few things by themselves. So when you speak to us, the costs we will quote for your group would typically include and exclude the below things. That said, if you need it, we can arrange it at extra cost.
 
-Trek Expedition cost
-Cost of Group-4- 49899
-Cost of Group-6- 42899
-Cost of Group-8- 38499
-Cost of Group -12- 35299
-Cost of Group-15- 32999
-Cost of Group-20- 28199
 
+## Inclusion
+
+  - Meals
+  - Sleeping bag
+  - Horse to lift our food, tents etc
+  - Tents
+  - Guide
+  - First aid
+  - Govt charges for booking the peak and all permissions
+  - Travel from Leh to Leh.
+  - Hotel at Leh
+  - Mountain equipments
+
+## Exclusion
+  - personal items (like clothes etc)
+  - Head torch/lamp
+  - Water bottle
+  - Trekking shoes
+  - Porter and staff tips.
+  - Flight ticket Delhi to Delhi.

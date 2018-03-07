@@ -1,12 +1,20 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import mountain from '../mountain.svg';
+import React from 'react'
+import Link from 'gatsby-link'
+import { css } from 'react-emotion'
+import mountain from '../mountainAdvice.png'
 
 export default function Header(props) {
  return (
    <section id="header">
      <div className="inner">
-       <img src={mountain} alt="mountain advice logo" width="50" height="50" />
+       <div css={`
+             background-color: white;
+             display: inline-block;
+             padding: 16px;
+            `}
+       >
+         <img src={mountain} alt="mountain advice logo" height="50" />
+       </div>
        <h1> <strong>Mountain Advice</strong><br />
        {` `}Adventure &  Travel</h1>
        <p>We are a bespoke adventure travel company.<br />

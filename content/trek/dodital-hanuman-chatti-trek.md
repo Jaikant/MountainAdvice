@@ -1,6 +1,7 @@
 ---
-title: "Dodital Hanuman Chatti Trek"
+title: Dodital Hanuman Chatti Trek
 imgdesc: "A picture of Dodital"
+trekid: "Dodital"
 imagepath: /img/dodital.jpg
 ---
 

@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import { css } from 'react-emotion';
-import logo from "../mountain.svg"
+import logo from "../mountainAdvice.png"
 import presets, { colors } from "../utils/presets"
 import media from '../utils/media';
 
@@ -55,7 +55,7 @@ export default ({ pathname }) => {
   }
   const stylesClass = css(styles);
   const gutters = isHomepage
-    ? { 
+    ? {
         paddingLeft: `32px`,
         paddingRight: `32px`,
         paddingTop: `32px`,
@@ -82,22 +82,22 @@ export default ({ pathname }) => {
 
   const logoClass = css(displayLogo);
 
-  const navPosition = isHomepage || isBlog 
-    ? { 
+  const navPosition = isHomepage || isBlog
+    ? {
         display: `inherit`,
         position: `absolute`
       }
-    : { 
+    : {
         display: `inherit`,
         position: `fixed`
       };
   const navPositionClass = css(navPosition);
 
   const navDisplay = isHomepage
-    ? { 
+    ? {
         display: `none`
       }
-    : { 
+    : {
         display: `inherit`
       };
   const navDisplayClass = css(navDisplay);
@@ -123,7 +123,7 @@ export default ({ pathname }) => {
         z-index: 2;
         left: 0;
         right: 0;
-        ${media.tablet` 
+        ${media.tablet`
            ${navPositionClass};
         `};
         ${stylesClass};
@@ -164,8 +164,8 @@ export default ({ pathname }) => {
                 margin : auto;
                 padding-left: 16px;
               `}
-          > 
-            Mountain Advice 
+          >
+            Mountain Advice
           </h3>
         </Link>
         <ul

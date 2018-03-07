@@ -2,9 +2,9 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
-import image_1 from '../images/pic02.jpg';
-import image_2 from '../images/pic03.jpg';
-import image_3 from '../images/pic04.jpg';
+import image_1 from '../images/jogin.jpg';
+import image_2 from '../images/bhagirathi.jpg';
+import image_3 from '../images/kang.jpg';
 
 
 export default function Third(props) {

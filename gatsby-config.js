@@ -102,6 +102,54 @@ module.exports = {
               firstname
               lastname
             }
+         }
+         treksWithTag (tag: "all") {
+           _id, level, profileurl, season, months, region, overview, picarray, metadescription,
+           noofdays, itinerary, rank, type, minage, altitude,
+          attractions { meadows, snow, wildlife,
+                        villagestay,
+                        localfestival,
+                        forests,
+                        camping,
+                        waterbody,
+                        rivercrossings,
+                        }
+           blogs { href, author, title, image, description }
+           faqs,
+         }
+         guideDepartures (guideuid: "RajeshThakur") {
+          _id
+          trekid
+          guideuid
+          noofdays
+          packagename
+          packagetype
+          packagelevel
+          startingfrom
+          endsat
+          packageoverview
+          trekkingdays
+          trekkingdistance
+          transportation
+          fooddetails
+          inclusions
+          exclusions
+          accommodation
+          packagehighlights
+          itinerary  {
+              startpoint
+              endpoint
+              maxaltitude
+              distancecovered
+              accomodationtype
+              dayhighlights
+          }
+          pricing {
+            price
+            note
+          }
+          maxseats
+          departure
           }
         }`,
       },

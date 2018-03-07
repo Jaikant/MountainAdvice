@@ -24,8 +24,6 @@ export default function Index({ data }) {
       <Third />
       <hr />
       <Fourth />
-      <Fifth />
-      <Footer />
     </Photon>
   );
 }

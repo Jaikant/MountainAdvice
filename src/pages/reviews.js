@@ -4,25 +4,24 @@ import './reviews.css';
 import sherpafeet from './textLogo.png';
 
 const ReviewBox = (props) => {
-console.log("Props are: ", props);
 const { comment, destination, month, year, rating, usr } = props;
 return (
-<div css={{
-    margin: `32px`,
-  }}
->
-<figure className="snip1204">
-<blockquote>
-   <div> {comment} </div>
-</blockquote>
-<div className="author">
- <img src={usr.picture} alt={`Review by ${usr.firstname}`}/>
- <h5>{usr. firstname}{` `}{usr.lastname}</h5>
- <span>{month && `${month} ${year}`}</span>
-</div>
-</figure>
-</div>
-)
+  <div css={{
+      margin: `32px`,
+    }}
+  >
+    <figure className="snip1204">
+      <blockquote>
+         <div> {comment} </div>
+      </blockquote>
+      <div className="author">
+       <img src={usr.picture} alt={`Review by ${usr.firstname}`}/>
+       <h5>{usr. firstname}{` `}{usr.lastname}</h5>
+       <span>{month && `${month} ${year}`}</span>
+      </div>
+    </figure>
+  </div>
+  )
 }
 
 export default (props) => {
@@ -37,6 +36,7 @@ return (
     <meta name="description" content={description} />
     <meta name="Keywords" content={'reviews, customers, trekkers'} />
     <meta property="og:title" content={title} />
+    <link rel="canonical" href={`https://sherpafeet.com/guide/RajeshThakur`} />
     <meta
       property="og:description"
       content={description}

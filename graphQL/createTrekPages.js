@@ -20,6 +20,7 @@ const createTrekPages = (createPage, graphql) => {
                   frontmatter {
                     title
                     imgdesc
+                    trekid
                     imagepath
                   }
                   fields {
@@ -54,7 +55,8 @@ const createTrekPages = (createPage, graphql) => {
                 slug: `${post.node.fields.slug}`,
                 prev: prev,
                 next: next,
-                imageregex: `/${imageregex}/`
+                imageregex: `/${imageregex}/`,
+                trekid: `${post.node.frontmatter.trekid}`
               }
             });
           });

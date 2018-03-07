@@ -2,8 +2,30 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import Helmet from 'react-helmet';
+import styled, { css } from 'react-emotion';
 import BlogCard from '../components/blog-cards';
+import colors from '../utils/colors';
 
+const Tag = styled.h3`
+  overflow: hidden;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: ${colors.mountain1};
+  ...props.style
+`;
+
+const FlexTagBox = ({ children }) => (
+  <div css={`
+         display: flex;
+         justifyContent: center;
+         flex-wrap: wrap;
+    `}
+  >
+      { children }
+  </div>
+)
 
 const IndexPage = (props) => {
   const { location, data, pathContext } = props
@@ -55,6 +77,14 @@ const IndexPage = (props) => {
             text-align: center;
           `}
      >
+       <FlexTagBox>
+           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Best Price </Tag>
+           <Tag style={{backgroundColor: `${colors.mountain4}`}}> Best Service </Tag>
+           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Group Discounts </Tag>
+           <Tag style={{backgroundColor: `${colors.mountain4}`}}> Customised Treks </Tag>
+           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Contact us @ +91 8755278296, +91 8126352857 </Tag>
+       </FlexTagBox>
+       <br />
        <h3> {heading} </h3>
      </div>
      <div style={{

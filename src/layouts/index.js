@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import classNames from 'classnames';
 import MobileNavigation from '../components/navigation-mobile';
 import Navigation from '../components/navigation';
+import Footer from '../components/Footer';
 import presets from "../utils/presets"
 
 
@@ -18,7 +19,7 @@ export default class Template extends React.Component {
 
     return (
       <div>
-        <Helmet defaultTitle={`Mountain Advice`} titleTemplate={`%s | Mountain Advice`}>
+        <Helmet defaultTitle={`Mountain Advice`}>
           <meta name="twitter:site" content="@RajeshT59035636" />
           <meta name="og:type" content="website" />
           <meta name="og:site_name" content="Mountain Advice" />
@@ -35,6 +36,7 @@ export default class Template extends React.Component {
         >
         {this.props.children()}
         </div>
+        <Footer />
         <MobileNavigation />
       </div>
     );

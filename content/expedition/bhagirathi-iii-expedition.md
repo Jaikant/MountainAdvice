@@ -2,45 +2,70 @@
 title: "Bhagirathi Expedition"
 imgdesc: "A picture of Bhagirathi expedition"
 imagepath: /img/bhagirathi.jpg
+piccredit: d_ion_27
+piclink: https://www.instagram.com/d_ion_27/
 ---
 
-About Bhagirathi-II
-Bhagirathi-II is very popular peak in Gangotri region. Almost every year climb this peak by Indian and foreigner from the topof this peack you can see Shivlinga peak, Thalyasager, Caukhamba range, and all massif of Bhagirathi, Chaturangi, Glacier, Kalandi pass, Satopant, Gaumukh Glacier, all Gangotri valley. Bhagirathi-II is Technical peak and Challenging peak for Mountaineers.
+## About Bhagirathi - II
+Bhagirathi-II is a very popular peak in the Gangotri region. This peak is climbed by many Indians and Non-Indians every year. From the top of Bhagirathi-II you can see the Shivlinga peak, Thalayasagar, Chaukhamba range, and all massifs of Bhagirathi, Chaturangi Glacier, Kalandi pass, Satopanth, Gaumukh Glacier. You can also see all of the Gangotri valley.
 
-Itainari of Bhagirathi –II
-Day-1:- Reporting at Uttarkashi
-Day-2:-
-Drive Uttarkashi- Gangori 100Km. altitude -3050mtr. Stay at hotel and food at own kitchen of agency.
+Bhagirathi-II is a technical peak and a challenging peak for mountaineers.
 
-Day-3:
-After breakfast start treak to Bhojwasa(38 20mtr) that day will be wide and gradual slop fin Gangtri to Bhojwasa 14 Km. we can provide for group pack, lunch and we need atleast two ltr of water carry on self bag pack on way we can find some spring water. After reaching Campsit Bhojwasa. We will stable our tents.
+## Itinerary for Bhagirathi – II
 
+#### Day 1 : Reporting at Uttarkashi
 
-Day:-4
-Bhojwasa Nandanvan maximum Altitute (4312 mtr) approx 12 km from Bhojwasa. After breakfast we will leave the camp side and start trek to Nandanvan on the way that day will be challenging and on the Glacier we will walk we will reach on campsite after 5-6 hours. We can pitch our base camps tents.
+#### Day 2 : Drive from Uttarkashi to Gangori, about 100Km.
+Altitude 3050mtr.
+We will stay at a hotel and the food will be from our own kitchen.
 
-
-Day:- 5 Acclimatization day at Base camp we will rest. In surrounding we will walk and preparing for next day.
-Day :-6 load feary Acclimatization day. To camp –I5200mtr.
-Day :- 7 load feary and return back to Nandanvan
-Day :- 8 Sift Camp-I
-Day:-9 Route open camp-II and load feary to camp-II height 5670mtr. And Back to Camp-I
-Day:-10 Sift Camp-II
-Day:- 11 Route Open to Summit 
-Day:-12 attempt Bhagirathi-II Midnight
-Day:- 13 Reserve day.
-Day:- 14 Back To Base Camp
-Day:- 15 Back To Bhojwasa
-Day:- 16 Back to Gangotri.
-Day:- 17 Drive Gangotri to Uttarkashi.
-Inclusion:-
-all type of meals, sleeping, tent, Qualified mountain guide. First aid, peak booking and all permission, travel uttarkashi to Gangotri and back to uttarkashi. Hotel at Gangotri, mountain equipment etc.
+#### Day 3 : Gangori to Bhojwasa
+After breakfast we start the trek to Bhojwasa (3820mtr). The trek will be a gradual uphill from Gangotri to Bhojwasa. It will be about 14 Km of trekking. We will provide packed lunch on the way. The trekkers would need to carry at least two litres of water in their own back packs. On the way we will find some spring water. After reaching the campsite of Bhojwasa, we will pitch our tents and can relax!
 
 
-Exclusion:-
-personal garments, head tourch, water bottle, trekking shoos, guide, poter,and staff tips. Travel Dehradun/haridwar/Rishikesh-Uttarkashi. Hotel at Uttarkashi First and Last day. It will be arrange all thing by us on request.
+#### Day 4 : Bhojwasa to Nandanvan
+Bhojwasa to Nandanvan is approximately 12 kms. The maximum altitude for the day would be about 4312 mtr. After breakfast we will start from our camp site and trek towards Nandanvan. The day will be challenging. We will walk on the Glacier for quiet a bit. It will take us about 5-6 hours to reach our next campsite. This would be our base camp.
 
 
-Package Rate for Groups-4- 70000 per per/head +5% GST.
-Package Rate for Group-6 -65000 per per/head +5% GST.
-Package Rate for Groups-8- 52999 per per/head +5% GST.
+#### Day 5 : Acclimatization
+
+This will be a day to acclimatize at the base camp. We will mostly rest as well as take short walks in the surronding areas to prepare for the next day.
+
+#### Day 6 : Ferry the load and acclimatization day for camp–I @ 5200 meters.
+#### Day 7 : Ferry the load to Camp-I
+ Return back to Nandanvan for the night.
+#### Day 8 : Shift to Camp-I
+#### Day 9 :  Open to route to camp-II and ferry the load to camp-II.
+  Height 5670mtr. Back to Camp-I for the night.
+#### Day 10 : Shift to Camp-II
+#### Day 11 : Open the route to Summit
+#### Day 12 : Attempt Bhagirathi-II @ Midnight
+#### Day 13 : Reserve day.
+#### Day 14 : Back To base camp
+#### Day 15 : Back To Bhojwasa
+#### Day 16 : Back to Gangotri.
+#### Day 17 : Drive from Gangotri to Uttarkashi.
+
+We can do all needed travel arrangements, though mostly trekkers prefer to arrange a few things by themselves. So when you speak to us, the costs we will quote for your group would typically include and exclude the below things. That said, if you need it, we can arrange it at extra cost.
+
+
+## Inclusion
+  - All meals
+  - Sleeping bags
+  - Tents
+  - Qualified mountain guide
+  - First aid
+  - Govt permits for the peak booking and all permission. (Note: Uttarakhand Peaks are more pristine, thanks to the higher permit charges by the govt.)
+  - Travel from Uttarkashi to Gangotri and back to Uttarkashi.
+  - Hotel at Gangotri.
+  - All needed mountain equipments
+
+
+## Exclusion
+   - Personal items (like clothes , etc)
+   - Head torch/lamps
+   - Personal water bottle
+   - Trekking shoes
+   - Tips for the guide, porter or staff.
+   - Travel from Dehradun/Haridwar/Rishikesh to Uttarkashi.
+   - Hotel at Uttarkashi First and Last day.

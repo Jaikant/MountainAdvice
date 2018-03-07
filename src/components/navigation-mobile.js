@@ -25,12 +25,12 @@ const MobileNavItem = ({ linkTo, label, icon }) => (
     to={linkTo}
     className={linkClass}
   >
-    <img src={icon} 
-         css={` 
-           height: 32px; 
-           display: block; 
-           margin: 0 auto; 
-           `} 
+    <img src={icon}
+         css={`
+           height: 32px;
+           display: block;
+           margin: 0 auto;
+           `}
     />
     <div>{label}</div>
   </Link>
@@ -64,4 +64,3 @@ export default () => (
     <MobileNavItem linkTo="/blog/" label="Blog" icon={BlogIcon} />
   </div>
 )
-
