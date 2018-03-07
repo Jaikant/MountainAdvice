@@ -1,9 +1,9 @@
 import React from "react"
 import Link from "gatsby-link"
-import { css } from 'react-emotion';
-import logo from "../mountainAdvice.png"
+import { css } from 'react-emotion'
+import logo from "../MountainAdvice.png"
 import presets, { colors } from "../utils/presets"
-import media from '../utils/media';
+import media from '../utils/media'
 
 const navItemStyles = css`
   box-sizing: border-box;

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { css } from 'react-emotion'
-import mountain from '../mountainAdvice.png'
+import mountain from '../MountainAdvice.png'
 
 export default function Header(props) {
  return (
