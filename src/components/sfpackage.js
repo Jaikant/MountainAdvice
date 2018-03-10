@@ -137,7 +137,6 @@ const TrekPackage = (props) => {
     accommodation,
     packagehighlights,
     itinerary,
-    pricing,
     maxseats,
   } = props.pkg;
 
@@ -201,10 +200,6 @@ export const sfpackageQuery = graphql `
         distancecovered
         accomodationtype
         dayhighlights
-    }
-    pricing {
-      price
-      note
     }
     maxseats
   }

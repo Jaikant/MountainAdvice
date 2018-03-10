@@ -25,6 +25,7 @@ return (
 }
 
 export default (props) => {
+const { pathname } = props.location;
 const { data } = props;
 const { edges } = data.allRatings;
 const title = 'Mountain Advice Customer Reviews';
@@ -36,6 +37,7 @@ return (
     <meta name="description" content={description} />
     <meta name="Keywords" content={'reviews, customers, trekkers'} />
     <meta property="og:title" content={title} />
+    <meta property="og:url" content={`https://mountainadvice.com${pathname}`} />
     <link rel="canonical" href={`https://sherpafeet.com/guide/RajeshThakur`} />
     <meta
       property="og:description"
@@ -47,7 +49,7 @@ return (
     />
     {data.bgImage.resize.src && (
       <meta
-        name="og:image"
+        property="og:image"
         content={`https://mountainadvice.com${
           data.bgImage.resize.src
         }`}
@@ -61,7 +63,7 @@ return (
         }`}
       />
     )}
-    <meta name="og:type" content="article" />
+    <meta property="og:type" content="article" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
   </Helmet>

@@ -50,6 +50,7 @@ const FlexTagBox = ({ children }) => (
          display: flex;
          justifyContent: center;
          flex-wrap: wrap;
+         margin: 32px 0px;
     `}
   >
       { children }
@@ -84,6 +85,7 @@ const Template = ({ data, pathContext }) => {
             <title> {frontmatter.title} | Mountain Advice </title>
             <meta name="description" content={post.excerpt} />
             <meta name="Keywords" content={keywords} />
+            <meta property="og:url" content={`https://mountainadvice.com${slug}`} />
             { trek && <link rel="canonical" href={`https://sherpafeet.com/${pathContext.trekid}/trek`} /> }
             <meta property="og:title" content={frontmatter.title} />
             <meta
@@ -96,7 +98,7 @@ const Template = ({ data, pathContext }) => {
             />
             {data.imageSharp && data.imageSharp.resize.src && (
               <meta
-                name="og:image"
+                property="og:image"
                 content={`https://mountainadvice.com${
                   data.imageSharp.resize.src
                 }`}
@@ -110,7 +112,7 @@ const Template = ({ data, pathContext }) => {
                 }`}
               />
             )}
-            <meta name="og:type" content="article" />
+            <meta property="og:type" content="article" />
             <meta name="twitter:label1" content="Reading time" />
             <meta
               name="twitter:data1"
@@ -119,13 +121,6 @@ const Template = ({ data, pathContext }) => {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={post.frontmatter.title} />
           </Helmet>
-          <FlexTagBox>
-              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Best Price </Tag>
-              <Tag style={{backgroundColor: `${colors.mountain4}`}}> Best Service </Tag>
-              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Group Discounts </Tag>
-              <Tag style={{backgroundColor: `${colors.mountain4}`}}> Customised Treks </Tag>
-              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Contact us @ +91 8755278296, +91 8126352857 </Tag>
-          </FlexTagBox>
           <h1>{post.frontmatter.title}</h1>
           <Styledp> {post.timeToRead} min read &middot;</Styledp>
           { data.imageSharp ?
@@ -141,7 +136,13 @@ const Template = ({ data, pathContext }) => {
                 </a>
               </p>
           }
-
+          <FlexTagBox>
+              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Best Price </Tag>
+              <Tag style={{backgroundColor: `${colors.mountain4}`}}> Best Service </Tag>
+              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Group Discounts </Tag>
+              <Tag style={{backgroundColor: `${colors.mountain4}`}}> Customised Treks </Tag>
+              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Contact us @ +91 8755278296, +91 8126352857 </Tag>
+          </FlexTagBox>
           <div
             css={`
               text-align: left;

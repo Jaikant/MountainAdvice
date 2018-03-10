@@ -54,7 +54,7 @@ const IndexPage = (props) => {
         />
         {data.bgImage.resize.src && (
           <meta
-            name="og:image"
+            property="og:image"
             content={`https://mountainadvice.com${
               data.bgImage.resize.src
             }`}
@@ -68,7 +68,7 @@ const IndexPage = (props) => {
             }`}
           />
         )}
-        <meta name="og:type" content="article" />
+        <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
       </Helmet>
@@ -77,13 +77,6 @@ const IndexPage = (props) => {
             text-align: center;
           `}
      >
-       <FlexTagBox>
-           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Best Price </Tag>
-           <Tag style={{backgroundColor: `${colors.mountain4}`}}> Best Service </Tag>
-           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Group Discounts </Tag>
-           <Tag style={{backgroundColor: `${colors.mountain4}`}}> Customised Treks </Tag>
-           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Contact us @ +91 8755278296, +91 8126352857 </Tag>
-       </FlexTagBox>
        <br />
        <h3> {heading} </h3>
      </div>
