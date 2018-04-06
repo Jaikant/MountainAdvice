@@ -1,5 +1,22 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "pathRules": [{
+    "paths": ["plugins/gatsby-source-graphql/package.json"],
+    "labels": [
+      "renovate"
+    ],
+    "assignees": [
+      "rdela"
+    ],
+    "devDependencies": {
+      "schedule": [
+        "on the first day of the month"
+      ],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
 }
