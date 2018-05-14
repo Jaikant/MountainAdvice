@@ -1,22 +1,24 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "pathRules": [{
-    "paths": ["plugins/gatsby-source-graphql/package.json"],
-    "labels": [
-      "renovate"
-    ],
-    "assignees": [
-      "rdela"
-    ],
-    "devDependencies": {
-      "schedule": [
-        "on the first day of the month"
-      ],
-      "automerge": true,
-      "major": {
-        "automerge": false
-      }
-    }
+	"extends": [
+		"config:base"
+	],
+	"packageRules": [{
+		"paths": ["plugins/gatsby-source-graphql/package.json"],
+		"labels": [
+			"renovate"
+		],
+		"assignees": [
+			"rdela"
+		]
+	}, {
+		"paths": ["plugins/gatsby-source-graphql/package.json"],
+		"depTypeList": ["devDependencies"],
+		"schedule": [
+			"on the first day of the month"
+		],
+		"automerge": true,
+		"major": {
+			"automerge": false
+		}
+	}]
 }
