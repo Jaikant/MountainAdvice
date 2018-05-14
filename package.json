@@ -46,7 +46,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "21.2.1",
     "nightwatch": "0.9.19",
-    "prettier": "1.7.4",
+    "prettier": "1.12.1",
     "react-test-renderer": "16.2.0",
     "selenium-download": "2.0.12",
     "selenium-server-standalone-jar": "3.9.1",
