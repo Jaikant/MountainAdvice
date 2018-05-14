@@ -47,7 +47,7 @@
     "jest": "21.2.1",
     "nightwatch": "0.9.19",
     "prettier": "1.7.4",
-    "react-test-renderer": "16.2.0",
+    "react-test-renderer": "16.3.2",
     "selenium-download": "2.0.12",
     "selenium-server-standalone-jar": "3.9.1",
     "selenium-webdriver": "3.6.0"
