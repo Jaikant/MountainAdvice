@@ -45,7 +45,7 @@
     "gh-pages": "1.1.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "21.2.1",
-    "nightwatch": "0.9.19",
+    "nightwatch": "0.9.21",
     "prettier": "1.7.4",
     "react-test-renderer": "16.2.0",
     "selenium-download": "2.0.12",
