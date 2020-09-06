@@ -1,0 +1,29 @@
+{
+  agency(slug: "rajesh-thakur") {
+    id
+    name
+    reviewsReceived {
+      id
+      msg
+      tripStartDate
+      tripEndDate
+      userHighlights {
+        name
+        description
+      }
+      attraction {
+        id
+        name
+        imageUrl
+      }
+      rating
+      like
+      user {
+        id
+        firstName
+        lastName
+        imageUrl
+      }
+    }
+  }
+}

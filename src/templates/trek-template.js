@@ -46,16 +46,17 @@ const Tag = styled.h3`
 `;
 
 const FlexTagBox = ({ children }) => (
-  <div css={`
-         display: flex;
-         justifyContent: center;
-         flex-wrap: wrap;
-         margin: 32px 0px;
+  <div
+    css={`
+      display: flex;
+      justifycontent: center;
+      flex-wrap: wrap;
+      margin: 32px 0px;
     `}
   >
-      { children }
+    {children}
   </div>
-)
+);
 
 const Styledp = styled.p`
   margin: auto;
@@ -63,21 +64,20 @@ const Styledp = styled.p`
 `;
 
 const Template = ({ data, pathContext }) => {
-  const {
-    markdownRemark: post,
-    treksWithTag: trek,
-    allGuideDepartures,
-  } = data;
+  // const { markdownRemark: post, treksWithTag: trek, allGuideDepartures } = data;
+  const { markdownRemark: post } = data;
   const { next, prev, slug } = pathContext;
   const { frontmatter } = post;
-  const edges = allGuideDepartures ? allGuideDepartures.edges : null;
+  // const edges = allGuideDepartures ? allGuideDepartures.edges : null;
 
   if (data.imageSharp == null) {
-    console.log("Could not set OG Image for trek, replace image ...   ", pathContext.slug);
+    console.log(
+      'Could not set OG Image for trek, replace image ...   ',
+      pathContext.slug
+    );
   }
   let keywords = 'treks, expeditions, garhwal, uttarakhand, himalayas';
   return (
-
     <div>
       <div className={blogTheme}>
         <Box css="margin: auto 16px auto 16px;">
@@ -85,31 +85,29 @@ const Template = ({ data, pathContext }) => {
             <title> {frontmatter.title} | Mountain Advice </title>
             <meta name="description" content={post.excerpt} />
             <meta name="Keywords" content={keywords} />
-            <meta property="og:url" content={`https://mountainadvice.com${slug}`} />
-            { trek && <link rel="canonical" href={`https://sherpafeet.com/${pathContext.trekid}/trek`} /> }
+            <meta
+              property="og:url"
+              content={`https://mountainadvice.com${slug}`}
+            />
+            {/* {trek && (
+              <link
+                rel="canonical"
+                href={`https://sherpafeet.com/${pathContext.trekid}/trek`}
+              />
+            )} */}
             <meta property="og:title" content={frontmatter.title} />
-            <meta
-              property="og:description"
-              content={post.excerpt}
-            />
-            <meta
-              name="twitter:description"
-              content={post.excerpt}
-            />
+            <meta property="og:description" content={post.excerpt} />
+            <meta name="twitter:description" content={post.excerpt} />
             {data.imageSharp && data.imageSharp.resize.src && (
               <meta
                 property="og:image"
-                content={`https://mountainadvice.com${
-                  data.imageSharp.resize.src
-                }`}
+                content={`https://mountainadvice.com${data.imageSharp.resize.src}`}
               />
             )}
             {data.imageSharp && data.imageSharp.resize.src && (
               <meta
                 name="twitter:image"
-                content={`https://mountainadvice.com${
-                  data.imageSharp.resize.src
-                }`}
+                content={`https://mountainadvice.com${data.imageSharp.resize.src}`}
               />
             )}
             <meta property="og:type" content="article" />
@@ -123,25 +121,36 @@ const Template = ({ data, pathContext }) => {
           </Helmet>
           <h1>{post.frontmatter.title}</h1>
           <Styledp> {post.timeToRead} min read &middot;</Styledp>
-          { data.imageSharp ?
-              <Img sizes={data.imageSharp.sizes} />
-              : null
-          }
-          {
-            frontmatter.piccredit &&
-              <p>
-                Picture credits:{` `}
-                <a href={frontmatter.piclink} target="_blank">
-                  {frontmatter.piccredit}
-                </a>
-              </p>
-          }
+          {data.imageSharp ? <Img sizes={data.imageSharp.sizes} /> : null}
+          {frontmatter.piccredit && (
+            <p>
+              Picture credits:{` `}
+              <a href={frontmatter.piclink} target="_blank">
+                {frontmatter.piccredit}
+              </a>
+            </p>
+          )}
           <FlexTagBox>
-              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Best Price </Tag>
-              <Tag style={{backgroundColor: `${colors.mountain4}`}}> Best Service </Tag>
-              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Group Discounts </Tag>
-              <Tag style={{backgroundColor: `${colors.mountain4}`}}> Customised Treks </Tag>
-              <Tag style={{backgroundColor: `${colors.mountain3}`}}> Contact us @ +91 8755278296, +91 8126352857 </Tag>
+            <Tag style={{ backgroundColor: `${colors.mountain3}` }}>
+              {' '}
+              Best Price{' '}
+            </Tag>
+            <Tag style={{ backgroundColor: `${colors.mountain4}` }}>
+              {' '}
+              Best Service{' '}
+            </Tag>
+            <Tag style={{ backgroundColor: `${colors.mountain3}` }}>
+              {' '}
+              Group Discounts{' '}
+            </Tag>
+            <Tag style={{ backgroundColor: `${colors.mountain4}` }}>
+              {' '}
+              Customised Treks{' '}
+            </Tag>
+            <Tag style={{ backgroundColor: `${colors.mountain3}` }}>
+              {' '}
+              Contact us @ +91 8755278296, +91 8126352857{' '}
+            </Tag>
           </FlexTagBox>
           <div
             css={`
@@ -150,16 +159,18 @@ const Template = ({ data, pathContext }) => {
             `}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-         <div>
-           { edges && ( edges.length > 0 ) && <SfPackageData packages={edges} /> }
-           { trek && ( trek != null ) && <SftrekData trek={trek}/> }
-         </div>
-          <div css={`
-                display: flex;
-                flex: flex-grow;
-                align-items: center;
-                margin: 32px 0px;
-              `}>
+          <div>
+            {/* {edges && edges.length > 0 && <SfPackageData packages={edges} />} */}
+            {/* {trek && trek != null && <SftrekData trek={trek} />} */}
+          </div>
+          <div
+            css={`
+              display: flex;
+              flex: flex-grow;
+              align-items: center;
+              margin: 32px 0px;
+            `}
+          >
             {prev && (
               <Link
                 to={prev.fields.slug}
@@ -192,7 +203,8 @@ const Template = ({ data, pathContext }) => {
 };
 
 export const blogPostQuery = graphql`
-  query TrekByPath($slug: String!, $imageregex: String, $trekid : String) {
+  # query TrekByPath($slug: String!, $imageregex: String, $trekid: String) {
+  query TrekByPath($slug: String!, $imageregex: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
@@ -204,16 +216,16 @@ export const blogPostQuery = graphql`
         piclink
       }
     }
-    treksWithTag(id: { eq: $trekid }) {
-      ...SftrekQuery
-    }
-    allGuideDepartures(filter: { trekid: { eq: $trekid }}) {
-     edges {
-       node {
-         ...SfPackageQuery
-       }
-     }
-    }
+    # treksWithTag(id: { eq: $trekid }) {
+    #   ...SftrekQuery
+    # }
+    # allGuideDepartures(filter: { trekid: { eq: $trekid } }) {
+    #   edges {
+    #     node {
+    #       ...SfPackageQuery
+    #     }
+    #   }
+    # }
     imageSharp(id: { regex: $imageregex }) {
       id
       sizes(maxWidth: 900) {
