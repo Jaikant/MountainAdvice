@@ -22,7 +22,6 @@
     "gatsby-plugin-sharp": "^1.6.8",
     "gatsby-remark-images": "^1.5.13",
     "gatsby-source-filesystem": "^1.5.1",
-    "gatsby-source-graphql": "^1.5.2",
     "gatsby-transformer-remark": "^1.7.12",
     "gatsby-transformer-sharp": "^1.6.19",
     "graphql-request": "^1.4.1",
